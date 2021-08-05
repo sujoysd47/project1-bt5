@@ -64,10 +64,26 @@ header{
     background-position: center;
     padding-top: 180px;
     padding-bottom: 80px;
+    position: relative;
+
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.b_text{
+    z-index: 9;
+    position: relative;
 }
 .b_text h1{
     font-size: 42px;
     font-weight:700;
+    
 }
 .b_text h1 span{
     color: #f7600e;
@@ -139,6 +155,22 @@ header{
     background-position: center;
     padding-top: 70px;
     padding-bottom: 70px;
+    position: relative;
+
+} 
+.submit::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.s_f{
+    position: relative;
+    z-index: 9;
 }
 .m_submit{
     margin-left: 20px !important;
@@ -203,3 +235,145 @@ header{
 
 
 /* work end */
+
+
+
+
+/* review start */
+.review{
+    background-image: url(../img/b_img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+.r_wrapper{
+
+}
+.r_img{
+    padding-bottom:30px;
+    
+}
+.r_text{
+    font-family: italic;
+}
+/* review end */
+
+
+
+/* team start */
+.team{
+    padding:70px 0;
+}
+
+.t_wrapper{
+
+}
+.i_wrapper{
+    margin-top: 35px;
+}
+.i_img img{
+    height: 280px;
+    width: 100%;
+}
+.i_text{
+    
+}
+.i_text h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 20px 0; 
+}
+.i_icon{
+
+}
+.i_icon ul li i{
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+.i_icon ul li i:hover{
+    transform: scale(.8);
+}
+.red{
+    background-color: #205b9f;
+}
+.green{
+    background-color: #00ace3;
+}
+.blue{
+    background-color: #ff6553;
+}
+.i_text p{
+    font-size: 14px;
+}
+
+
+/* team  end */
+
+
+/* contact start */
+.contact{
+    background-image: url(../img/b_img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+
+.c_wrapper{
+    padding:30px 0 ;
+}
+.c_m{
+    padding:20px 0 ;
+}
+.c_f_b{
+    text-align: left;
+}
+
+.c_f_icon{
+    text-align: right;
+}
+
+
+
+.c_f_button button{
+    background-color:#f7600e;
+    color: white;
+    padding: 6px 25px;
+    font-size: 16px;
+}
+
+.c_f_button button:hover{
+    color: white;
+}
+.c_f_icon ul li i{
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+.c_f_icon ul li i:hover{
+    transform: scale(.8);
+}
+
+/* contact end */
+
+
+/* footer start */
+footer{
+    background-color:#3b434c;
+}
+/* footer end */
